@@ -5,6 +5,6 @@ crashes <- function(crashid = NA) {
     return traffic_data$crashes
   } else {
     return traffic_data$crashes %>%
-                filter(Crash.ID == crashid)
+                dplyr::filter(Crash.ID == crashid)
   }
 }

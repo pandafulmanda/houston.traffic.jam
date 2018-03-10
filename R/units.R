@@ -5,6 +5,6 @@ units <- function(crashid = NA) {
     return traffic_data$units
   } else {
     return traffic_data$units %>%
-                filter(Crash.ID == crashid)
+                dplyr::filter(Crash.ID == crashid)
   }
 }
